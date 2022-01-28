@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,700;1,900&family=Berkshire+Swash&family=Chewy&family=Viga&display=swap");
+
+/* font-family: 'Alegreya Sans SC', sans-serif; */
+
+/* font-family: 'Berkshire Swash', cursive; */
+/* font-family: 'Chewy', cursive; */
+
+/* font-family: 'Viga', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+}
+.section1 { 
+  background-color: rgb(163, 136, 61);
+  background-image: url(https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-repeat: no-repeat;
+  background-size: 100vw 20vh;
+  color: #36768f;
+  height: 10vh;
+  width: 100vw;
+  border: 2px solid red;
+  box-shadow: 0px 2px 15px red;
+  /* margin-top: 5vh; */
+  padding: 0.5vh 0vw;
+  z-index: 1;
+  /* overflow-x: scroll; */
+  position: fixed;
+  display: flex;
+  /* flex-direction: row; */
+}
+.section1 nav {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.section1 nav ul li {
+  display: inline;
+  padding: 0vh 10px;
+}
+#username {
+  color: rgb(252, 255, 104);
+  font-size: 2.5rem;
+  font-style: italic;
+  /* padding-left:1.5vw; */
+  padding-right: 100px;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 800;
+  text-shadow: #afe62f;
+}
+#username:hover {
+  /* border: 2px dashed gold; */
+  /* background-color: rgba(255, 217, 0, 0.486); */
+  color: rgb(248, 223, 109);
+  text-shadow: 0px 2px 10px rgba(253, 17, 17, 0.788);
+}
+
+a:link {
+  color: #ffc8c8;
+  /* border: 1px solid indigo; */
+  /* background-color: rgb(235, 198, 34); */
+  text-decoration: none;
+  font-size: 5vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a:hover {
+  color: #afe62f;
+  transition-duration: 1s;
+  transition-property: text-shadow;
+  transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+  /* border: 1px solid rgb(195, 20, 211); */
+  
+  background-color: rgba(198, 198, 228, 0.082);
+  text-shadow: 2px 2px 15px gold;
+}
+.section2 {
+  background-color: rgb(227, 227, 228);
+  background-image: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-repeat: no-repeat;
+  /* margin-top: 5vh; */
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+  color: antiquewhite;
+  /* padding-top: 20vh; */
+  padding-left: 10px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: inset 0px 10px 20px 10px yellow;
+  text-align: center;
+  font-size: x-large;
+  font-weight: 800;
+}
+.content p{
+  font-family: 'Chewy', cursive;
+  word-spacing: 5px;
+}
+#sans {
+  height: 37vh;
+  max-height: 50%;
+  /* width: auto; */
+  border-radius: 70%;
+  position: relative;
+  border-top: #afe62f;
+  border-bottom: rgb(0, 84, 240);
+  border-width: 10px;
+  border-left: indigo 0.5em;
+  border-right: indigo 0.5em;
+  border-style: groove;
+  filter: contrast(120%);
+  filter: brightness(110%);
+  animation-name: sans;
+  animation-duration: 4s;
+  animation-delay: 0.7s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+  /* animation-timing-function: ease-in-out; */
+  /* transform: rotate(20deg); */
+  /* box-shadow: lawngreen 20px auto auto ; */
+  /* box-shadow: 20px 5px inset; */
+  /* display: flex;
+  justify-content: left; */
+}
+.content {
+  /* box-shadow: 10px 20px 10px indigo; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* align-items: center; */
+  padding-top: 15vh;
+  align-self: center;
+  line-height: 40px;
+  text-shadow: 5px 2px 0px rgba(253, 38, 38, 0.342);
+}
+.section3 {
+  background-color: darkblue;
+  background-image: url(https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  color: rgb(133, 251, 255);
+  font-size: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: 'Viga', sans-serif;
+  height: 5vh;
+  justify-content: center;
+  align-content: center;
+  box-shadow: inset 0px 0px 15px 2px lime;
+
+}
+@keyframes sans {
+  0% {
+    transform-style: flat;
+    transform: skew(5deg);
+  }
+  50% {
+    border-left: #afe62f;
+    border-right: rgb(0, 84, 240);
+    border-width: 10px;
+    border-top: indigo 0.5em;
+    border-bottom: indigo 0.5em;
+    border-style: ridge;
+    filter: saturate(120%);
+  }
+  75% {
+    border: 10px groove gold;
+
+    /* border-style: groove; */
+  }
+  100% {
+    border: 10px ridge rgb(255, 61, 61);
+  }
+}
+.containerB {
+  background-image: url(https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  font-family: "Viga", sans-serif;
+  font-size: 3ex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: greenyellow;
+  box-shadow: inset 0px 10px 20px 10px rgb(255, 0, 221);
+  color: bisque;
+  animation-name: text1;
+  animation-direction: alternate;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+.hobbies {
+  background-image: url(https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45vh;
+  width: 80vw;
+  border: 2px solid red;
+  margin: 0px auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto;
+  /* justify-items: center; */
+  align-content: center;
+  justify-items: center;
+  box-shadow: 3px 5px 15px red;
+}
+.hobbies h2 {
+  display: block;
+  height: 10px;
+}
+.hobby1 {
+  background-color: red;
+  height: 25vh;
+  font-family: "Berkshire Swash", cursive;
+  width: 20vw;
+  font-size: 25px;
+  text-align: center;
+}
+.hobby1 img {
+  height: 25vh;
+  width: 20vw;
+}
+.hobby2 {
+  background-color: rgb(38, 0, 255);
+  width: 20vw;
+  height: 25vh;
+}
+.hobby2 img {
+  height: 25vh;
+  width: 20vw;
+}
+.hobby3 {
+  height: 25vh;
+  
+  background-color: rgb(118, 219, 23);
+  width: 20vw;
+}
+.hobby3 img {
+  height: 25vh;
+  width: 20vw;
+  
+}
+.hobby1:hover{
+  box-shadow: 5px 5px 10px yellow;
+  border: 3px solid gold;
+  
+}
+.hobby2:hover{
+  box-shadow: 5px 5px 10px yellow;
+  border: 3px solid gold;
+  
+}
+.hobby3:hover{
+  box-shadow: 5px 5px 10px yellow;
+  border: 3px solid gold;
+  
+}
+
+.skills {
+  background-image: url(https://images.pexels.com/photos/2531709/pexels-photo-2531709.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-repeat: no-repeat;
+  /* background-clip: border-box; */
+  background-size: cover;
+  height: 40vh;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  align-content: space-around;
+  /* margin: auto auto; */
+  border: 2px ridge rgb(212, 192, 10);
+  box-shadow: 3px 5px 15px gold;
+}
+.skill1{
+  height: 25vh;
+  width: 20vw;
+  background-color: rgba(255, 250, 250, 0.336);
+}
+.skill1 img{
+  height: 25vh;
+  width: 20vw;
+}
+.skill2{
+  height: 25vh;
+  width: 20vw;
+  /* padding-right: 20px; */
+  background-color: rgba(255, 255, 255, 0.342);
+}
+.skill2 img{
+  height: 20vh;
+  padding-right: 0px;
+  width:20vw;
+}
+.skill3{
+  height: 25vh;
+  background-color: rgba(255, 255, 255, 0.342);
+  width: 20vw;
+}
+.skill3 img{
+    height: 22vh;
+    width: 20vw;
+  }
+.skill1:hover{
+  background-color: cyan;
+  border: 3px solid black
+}
+.skill2:hover{
+  background-color: cyan;
+  border: 3px solid black
+}
+.skill3:hover{
+  background-color: cyan;
+  border: 3px solid black
+}
+@keyframes text1 {
+  50%{
+    font-size: large;
+    /* font-stretch: ultra-expanded; */
+    text-shadow: 2px 2px 20px cyan;
+    
+    /* font-family: 'Chewy', cursive; */
+  }
+  100%{
+    /* transform-style: flat; */
+    text-shadow: 2px 2px 10px rgb(255, 0, 0);
+  }
+  
+}
